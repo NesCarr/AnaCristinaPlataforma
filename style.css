@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'open sans', sans-serif;
+}
+
+.welcome-page {
+  color: white;
+  padding: 1rem;
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(180deg, #111, #000) no-repeat;
+  border-radius: 0px 0px 10px 10px;
+  border-bottom: 1px solid var(--color-pink);
+}
+
+.welcome-img {
+  position: relative;
+  top: -20px;
+}
+
+.welcome-names {
+  position: relative;
+  left: 200px;
+  top: 90px;
+  max-width: 18.75rem;
+}
+
+:root {
+  --color-pink: rgb(253, 31, 205);
+  --color-pink03: rgba(253, 31, 205, 0.205);
+  --color-pink02: rgb(211, 2, 165);
+  --color-disable: #202020;
+  --color-blue: #09d;
+}
+
+body {
+  background: #111;
+}
+
+#logo {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+#header {
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-pink);
+  box-shadow: 0px 0px 15px var(--color-pink);
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  margin: 1rem;
+  gap: 0.5rem;
+}
+
+#menu a {
+  color: white;
+  background: #121212;
+  padding: 0.5rem;
+  border-radius: 3px;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  background: #262626;
+}
+
+#menu #cadast {
+  background-image: linear-gradient(
+    56deg,
+    var(--color-pink),
+    rgb(223, 52, 151)
+  );
+}
+
+#area-contents-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products {
+  color: white;
+  background: #222;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-bottom: 2px solid var(--color-pink);
+}
+
+p {
+  color: #d2d2d2;
+}
+
+.e-books {
+  color: white;
+  background: #222;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-bottom: 2px solid var(--color-pink);
+}
+
+.contents {
+  color: white;
+  background: #222;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-bottom: 2px solid var(--color-pink);
+}
+
+.apps {
+  color: white;
+  background: #222;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-bottom: 2px solid var(--color-pink);
+}
+
+.products a,
+.apps a,
+.contents a,
+.e-books a,
+.filesA a,
+.blogA a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(35deg, var(--color-pink02), rgb(212, 36, 174));
+  margin: 0 auto;
+  padding: 0.5rem;
+  display: grid;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.filesA {
+  color: white;
+  background: #222;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-bottom: 2px solid var(--color-pink);
+}
+
+.blogA {
+  color: white;
+  background: #222;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-bottom: 2px solid var(--color-pink);
+}
+
+.apps:hover,
+.products:hover,
+.e-books:hover,
+.blogA:hover,
+.filesA:hover,
+.contents:hover {
+  background: #333;
+}
+
+.note {
+  display: flex;
+  margin: 2.1rem;
+  padding: 1rem;
+  background: #000;
+  border-radius: 10px;
+}
+
+.area-note {
+  color: white;
+  display: block;
+  margin: 1rem;
+}
+
+.note p {
+  color: #d2d2d2;
+}
+
+.contents-list {
+  margin: 1rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid #222;
+}
+
+.discoverA {
+  color: white;
+  border-bottom: 1px solid #222;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.member,
+.tutor,
+.tutor-learn,
+.tutor-courses {
+  color: white;
+  background: var(--color-disable);
+  border-bottom: 2px solid var(--color-blue);
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.btns-acess {
+  background: #111;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 3px;
+  height: 20vh;
+}
+
+#rodape {
+  color: white;
+  background-color: #000;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rodape-menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#rodape-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  background: #111;
+  border-radius: 3px;
+}
+
+.area-discover {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  #area-contents-list,
+  .area-discover {
+    display: block;
+  }
+  .note {
+    display: block;
+    text-align: center;
+  }
+  #logo {
+    font-size: 1.4rem;
+  }
+  #rodape h5 {
+    display: none;
+  }
+  .welcome-page {
+    display: none;
+  }
+}
