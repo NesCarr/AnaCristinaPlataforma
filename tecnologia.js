@@ -12,3 +12,30 @@ $(document).ready(function () {
     return false
   })
 })
+
+var visibilidade = true
+
+var loadingbtn = document.getElementById('loading')
+
+function exibir() {
+  document.getElementById('loading').style.display = 'block'
+}
+
+function ocultar() {
+  document.getElementById('loading').style.display = 'none'
+}
+
+function fixed() {
+  document.getElementById('loading').style.position = 'fixed'
+}
+
+function loadingbtn() {
+  if (visibilidade) {
+    document.getElementById('loading').style.display = 'none'
+    visibilidade = false
+  } else {
+    document.getElementById('loading').style.display = 'inline'
+    document.getElementById('loading').style.position = 'fixed'
+    visibilidade = true
+  }
+}
