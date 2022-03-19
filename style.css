@@ -1,3 +1,4 @@
+/* Código Universal CSS */
 * {
   margin: 0;
   padding: 0;
@@ -5,77 +6,126 @@
   font-family: 'open sans', sans-serif;
 }
 
-.welcome-page {
+#loading {
+  position: absolute;
+  position: fixed;
+  top: 250px;
+  width: 20%;
+  left: 500px;
+  display: none;
+  z-index: 1000;
+  color: #222;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border: 1px solid #cccccc;
+  box-shadow: 0px 0px 5rem #000;
+}
+
+#loading p {
+  color: #333;
+}
+
+#warning {
+  position: absolute;
+  position: fixed;
+  display: none;
+  top: 535px;
+  left: 30px;
+  width: 20%;
+  z-index: 1000;
   color: white;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  text-align: left;
+  background: rgba(255, 2, 2, 0.575);
+  border: 1px solid red;
+}
+
+/* Código CSS: Bem vindo Páginas */
+.welcome-page {
   padding: 1rem;
-  margin: 1.5rem;
   display: flex;
+  margin: 1.5rem;
+  color: white;
   justify-content: space-around;
   background: linear-gradient(180deg, #111, #000) no-repeat;
   border-radius: 0px 0px 10px 10px;
   border-bottom: 1px solid var(--color-pink);
 }
 
+/* Código CSS: Bem vindo Imagem */
 .welcome-img {
-  position: relative;
   top: -20px;
+  position: relative;
 }
 
+/* Código CSS: Bem vindo Nomes */
 .welcome-names {
-  position: relative;
-  left: 200px;
   top: 90px;
+  left: 160px;
+  position: relative;
   max-width: 18.75rem;
 }
 
+/* ROOT CSS: Variavéis de cores */
 :root {
-  --color-pink: rgb(253, 31, 205);
-  --color-pink03: rgba(253, 31, 205, 0.205);
-  --color-pink02: rgb(211, 2, 165);
   --color-disable: #202020;
-  --color-blue: #09d;
+  --color-pink: rgb(253, 31, 205);
+  --color-pink02: rgb(211, 2, 165);
+  --color-pink03: rgba(253, 31, 205, 0.205);
 }
 
+/* Código CSS: Corpo do site */
 body {
   background: #111;
 }
 
-#logo {
-  margin: 1rem;
-  font-size: 1.5rem;
-  color: white;
-  text-decoration: none;
-}
-
+/* Código CSS: Header */
 #header {
-  background: #121212;
   display: flex;
   align-items: center;
+  background: #121212;
   justify-content: space-between;
   border-bottom: 1px solid var(--color-pink);
   box-shadow: 0px 0px 15px var(--color-pink);
 }
 
-#menu {
-  display: flex;
-  list-style: none;
+/* Código CSS: Header > logo */
+#logo {
   margin: 1rem;
-  gap: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
+/* Código CSS: Header > menu */
+#menu {
+  gap: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  list-style: none;
+}
+
+/* Código CSS: Header > menu a (falando com código "a" do menu) */
 #menu a {
   color: white;
-  background: #121212;
   padding: 0.5rem;
   border-radius: 3px;
   transition: 0.3s ease;
   text-decoration: none;
+  background: #121212;
 }
 
+/* Código CSS: Header > menu a (Quando cursor passar por cima é para mudar a cor) */
 #menu a:hover {
   background: #262626;
 }
 
+/* Código CSS: header > menu > cadast (Falando com a ID do botão "Produto" para ser Destacado com uma cor diferente */
 #menu #cadast {
   background-image: linear-gradient(
     56deg,
@@ -84,17 +134,18 @@ body {
   );
 }
 
+/* Código CSS: Código Área Conteúdo Listas */
 #area-contents-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .products {
-  color: white;
-  background: #222;
   width: 90%;
-  margin: 1rem auto;
   padding: 1rem;
+  color: white;
+  margin: 1rem auto;
+  background: #222;
   border-radius: 10px;
   transition: 0.3s ease;
   border-bottom: 2px solid var(--color-pink);
@@ -105,33 +156,33 @@ p {
 }
 
 .e-books {
-  color: white;
-  background: #222;
   width: 90%;
-  margin: 1rem auto;
   padding: 1rem;
+  color: white;
+  margin: 1rem auto;
+  background: #222;
   border-radius: 10px;
   transition: 0.3s ease;
   border-bottom: 2px solid var(--color-pink);
 }
 
 .contents {
-  color: white;
-  background: #222;
   width: 90%;
-  margin: 1rem auto;
   padding: 1rem;
+  color: white;
+  margin: 1rem auto;
+  background: #222;
   border-radius: 10px;
   transition: 0.3s ease;
   border-bottom: 2px solid var(--color-pink);
 }
 
 .apps {
-  color: white;
-  background: #222;
   width: 90%;
-  margin: 1rem auto;
+  color: white;
   padding: 1rem;
+  margin: 1rem auto;
+  background: #222;
   border-radius: 10px;
   transition: 0.3s ease;
   border-bottom: 2px solid var(--color-pink);
@@ -143,33 +194,33 @@ p {
 .e-books a,
 .filesA a,
 .blogA a {
-  text-decoration: none;
+  display: grid;
   color: white;
-  background: linear-gradient(35deg, var(--color-pink02), rgb(212, 36, 174));
   margin: 0 auto;
   padding: 0.5rem;
-  display: grid;
-  justify-content: center;
   border-radius: 3px;
+  text-decoration: none;
+  justify-content: center;
+  background: linear-gradient(35deg, var(--color-pink02), rgb(212, 36, 174));
 }
 
 .filesA {
-  color: white;
-  background: #222;
   width: 90%;
-  margin: 1rem auto;
   padding: 1rem;
+  color: white;
+  margin: 1rem auto;
+  background: #222;
   border-radius: 10px;
   transition: 0.3s ease;
   border-bottom: 2px solid var(--color-pink);
 }
 
 .blogA {
-  color: white;
-  background: #222;
   width: 90%;
-  margin: 1rem auto;
   padding: 1rem;
+  color: white;
+  margin: 1rem auto;
+  background: #222;
   border-radius: 10px;
   transition: 0.3s ease;
   border-bottom: 2px solid var(--color-pink);
@@ -182,20 +233,21 @@ p {
 .filesA:hover,
 .contents:hover {
   background: #333;
+  transform: translateY(-3px);
 }
 
 .note {
+  padding: 1rem;
   display: flex;
   margin: 2.1rem;
-  padding: 1rem;
   background: #000;
   border-radius: 10px;
 }
 
 .area-note {
+  margin: 1rem;
   color: white;
   display: block;
-  margin: 1rem;
 }
 
 .note p {
@@ -204,63 +256,104 @@ p {
 
 .contents-list {
   margin: 1rem;
-  color: white;
-  text-align: center;
   padding: 1rem;
-  border-bottom: 2px solid #222;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: 0.3s ease;
+  border-bottom: 1px solid #222;
+}
+
+.contents-list:hover {
+  border-bottom: 1px solid var(--color-pink);
 }
 
 .discoverA {
-  color: white;
-  border-bottom: 1px solid #222;
   margin: 1rem;
   padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
   text-align: center;
+  transition: 0.3s ease;
+  border-bottom: 1px solid #222;
+}
+
+.comfort-zone {
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: 0.3s ease;
+  border-bottom: 1px solid #222;
+}
+
+.comfort-zone-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #09d;
+  margin: 1rem;
+  border-radius: 10px;
+  background: #101010;
+}
+
+.blow {
+  width: 90%;
+  padding: 1rem;
+  color: white;
+  margin: 1rem auto;
+  background: #222;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-bottom: 2px solid #09d;
+}
+
+.discoverA:hover {
+  border-bottom: 1px solid var(--color-pink);
 }
 
 .member,
 .tutor,
 .tutor-learn,
 .tutor-courses {
-  color: white;
-  background: var(--color-disable);
-  border-bottom: 2px solid var(--color-blue);
   width: 90%;
-  margin: 1rem auto;
+  color: white;
   padding: 1.5rem;
+  margin: 1rem auto;
   border-radius: 10px;
   transition: 0.3s ease;
+  background: var(--color-disable);
+  border-bottom: 1px solid var(--color-pink);
 }
 
-.btns-acess {
-  background: #111;
-  padding: 0.5rem;
-  border: 1px solid #333;
-  border-radius: 3px;
-  height: 20vh;
+.member:hover,
+.tutor:hover,
+.tutor-learn:hover,
+.tutor-courses:hover {
+  transform: translateY(-3px);
 }
 
 #rodape {
-  color: white;
-  background-color: #000;
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
+  color: white;
   align-items: center;
+  background-color: #000;
+  justify-content: space-between;
 }
 
 #rodape-menu {
-  list-style: none;
-  display: flex;
   gap: 0.5rem;
+  display: flex;
+  list-style: none;
 }
 
 #rodape-menu a {
-  text-decoration: none;
   color: white;
   padding: 0.5rem;
   background: #111;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .area-discover {
@@ -285,5 +378,10 @@ p {
   }
   .welcome-page {
     display: none;
+  }
+  #loading {
+    position: absolute;
+    left: 130px;
+    width: 45%;
   }
 }
